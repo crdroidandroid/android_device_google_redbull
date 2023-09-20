@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "crdroidandroid/android_kernel_google_redbull",
+    "target_path": "kernel/google/redbull"
+  },
+  {
+    "repository": "crdroidandroid/proprietary_vendor_google_redfin",
+    "target_path": "vendor/google/redfin"
+  }
+]
