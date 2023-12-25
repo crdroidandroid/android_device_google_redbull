@@ -845,7 +845,7 @@ PRODUCT_PACKAGES += $(HIDL_WRAPPER)
 # Increment the SVN for any official public releases
 ifeq ($(PRODUCT_DEVICE_SVN_OVERRIDE),)
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.vendor.build.svn=55
+	ro.vendor.build.svn=72
 endif
 
 # Enable iwlan service logging for debug
@@ -860,7 +860,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Set Vendor SPL to match platform
-VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH = 2023-09-05
 
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.adm.buffering.ms=2
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio_hal.period_multiplier=2
