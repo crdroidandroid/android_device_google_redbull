@@ -1,6 +1,13 @@
 [
   {
     "repository": "crdroidandroid/android_kernel_google_redbull",
-    "target_path": "kernel/google/redbull"
+    "target_path": "kernel/google/redbull",
+    "branch": "14",
+    "remote": "github"
   }
+  {
+    "repository": "LineageOS/android_device_google_gs-common",
+    "target_path": "device/google/gs-common",
+    "branch": "lineage-21",
+    "remote": "github"
 ]
