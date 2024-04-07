@@ -282,19 +282,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.monitorRotation=true
 
-# Add Oslo test for debug rom
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += \
-    tunneling_hal_test \
-    sensor_param_test \
-    oslo_config_test \
-    odsp_api_test \
-    crash_event_logger \
-    dump_debug_info \
-    get_pwr_stats \
-    crash_trigger_test
-endif
-
 # graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
