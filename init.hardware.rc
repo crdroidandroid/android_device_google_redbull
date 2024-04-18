@@ -774,6 +774,15 @@ service bugreport /system/bin/dumpstate -d -p -z
     oneshot
     keycodes 114 115 116
 
+# Init-fingerprint
+service fpcpermission /vendor/bin/init.fingerprint.sh
+    user root
+    group root
+    disabled
+
+on property:sys.boot_completed=1
+    start fpcpermission
+
 # DSDS feature
 # Set to Dual-sim mode based on CDT setting
 on property:ro.boot.hardware.dsds=1
