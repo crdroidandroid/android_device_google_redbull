@@ -10,5 +10,11 @@
     "target_path": "vendor/bcr",
     "branch": "16.0",
     "remote": "github"
+  },
+  {
+    "repository": "306bobby-android/packages_apps_PixelParts",
+    "target_path": "packages/apps/PixelParts",
+    "branch": "16.0",
+    "remote": "github"
   }
 ]
