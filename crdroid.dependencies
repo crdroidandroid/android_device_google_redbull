@@ -10,5 +10,11 @@
     "target_path": "device/google/gs-common",
     "branch": "lineage-21",
     "remote": "github"
+  },
+  {
+    "repository": "306bobby-android/packages_apps_PixelParts",
+    "target_path": "packages/apps/PixelParts",
+    "branch": "udc",
+    "remote": "github"
   }
 ]

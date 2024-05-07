@@ -40,6 +40,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GoogleParts
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # RCS
 PRODUCT_PACKAGES += \
     PresencePolling \
