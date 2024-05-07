@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
 #BCR
 $(call inherit-product, vendor/bcr/bcr.mk)
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # RCS
 PRODUCT_PACKAGES += \
     PresencePolling \
