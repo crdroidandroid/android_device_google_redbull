@@ -6,3 +6,6 @@
 
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
