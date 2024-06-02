@@ -2,5 +2,11 @@
   {
     "repository": "crdroidandroid/android_kernel_google_redbull",
     "target_path": "kernel/google/redbull"
+  },
+  {
+    "repository": "306bobby-android/packages_apps_PixelParts",
+    "target_path": "packages/apps/PixelParts",
+    "branch": "udc",
+    "remote": "github"
   }
 ]
