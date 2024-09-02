@@ -23,7 +23,6 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 TARGET_BOARD_PLATFORM := lito
 
 PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/av \
     hardware/google/camera \
     hardware/google/interfaces \
     hardware/google/pixel \
