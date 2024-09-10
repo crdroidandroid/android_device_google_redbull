@@ -89,12 +89,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     messaging \
 
-# ramdump_app
-PRODUCT_PACKAGES_DEBUG += RamdumpUploader
-
-# ssr_detector_app
-PRODUCT_PACKAGES += SSRestartDetector
-
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
