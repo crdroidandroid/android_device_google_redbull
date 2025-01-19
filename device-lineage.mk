@@ -46,6 +46,10 @@ PRODUCT_PACKAGES += \
 # PixelParts
 include packages/apps/PixelParts/device.mk
 
+#Viper4Android
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+TARGET_EXCLUDES_AUDIOFX := true
+
 # RCS
 PRODUCT_PACKAGES += \
     PresencePolling \
