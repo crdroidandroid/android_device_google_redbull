@@ -1,6 +1,20 @@
 [
   {
     "repository": "crdroidandroid/android_kernel_google_redbull",
-    "target_path": "kernel/google/redbull"
+    "target_path": "kernel/google/redbull",
+    "branch": "15.0",
+    "remote": "github"
+  },
+  {
+    "repository": "crdroidandroid/android_device_google_gs-common",
+    "target_path": "device/google/gs-common",
+    "branch": "15.0",
+    "remote": "github"
+  },
+  {
+    "repository": "TogoFire/packages_apps_ViPER4AndroidFX",
+    "target_path": "packages/apps/ViPER4AndroidFX",
+    "branch": "v4a",
+    "remote": "github"
   }
 ]
