@@ -41,6 +41,10 @@ $(call soong_config_set,livedisplay_sdm,enable_dm,false)
 PRODUCT_PACKAGES += \
     GoogleParts
 
+#Viper4Android
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+TARGET_EXCLUDES_AUDIOFX := true
+
 # RCS
 PRODUCT_PACKAGES += \
     PresencePolling \
