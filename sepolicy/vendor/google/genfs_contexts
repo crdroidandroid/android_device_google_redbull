@@ -82,6 +82,13 @@ genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-1/1-005a                    
 genfscon sysfs /devices/platform/soc/ac4a000.qcom,cci                           u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/platform/soc/ac4b000.qcom,cci                           u:object_r:sysfs_camera:s0
 
+# Torch
+genfscon sysfs /sys/class/leds/led:torch_0/brightness                           u:object_r:sysfs_torch:s0
+genfscon sysfs /sys/class/leds/led:torch_0/max_brightness                       u:object_r:sysfs_torch:s0
+genfscon sysfs /sys/class/leds/led:torch_1/brightness                           u:object_r:sysfs_torch:s0
+genfscon sysfs /sys/class/leds/led:torch_1/max_brightness                       u:object_r:sysfs_torch:s0
+genfscon sysfs /sys/class/leds/led:switch_2/brightness                          u:object_r:sysfs_torch:s0
+
 # eSIM status
 genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/esim                   u:object_r:sysfs_esim:s0
 
