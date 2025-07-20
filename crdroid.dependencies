@@ -14,7 +14,7 @@
   {
     "repository": "306bobby-android/packages_apps_PixelParts",
     "target_path": "packages/apps/PixelParts",
-    "branch": "udc",
+    "branch": "ics",
     "remote": "github"
   },
   {
