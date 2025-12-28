@@ -1,6 +1,8 @@
 [
   {
     "repository": "crdroidandroid/android_kernel_google_redbull",
-    "target_path": "kernel/google/redbull"
+    "target_path": "kernel/google/redbull",
+    "branch": "16.0",
+    "remote": "github"
   }
 ]
