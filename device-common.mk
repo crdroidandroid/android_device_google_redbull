@@ -513,8 +513,8 @@ PRODUCT_PROPERTY_OVERRIDES += ro.telephony.default_network=27
 # Set display color mode to Adaptive by default
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.color_saturation=1.0 \
-    persist.sys.sf.native_mode=2 \
-    persist.sys.sf.color_mode=9
+    persist.sys.sf.native_mode=0 \
+    persist.sys.sf.color_mode=0
 
 # Keymaster configuration
 PRODUCT_COPY_FILES += \
@@ -678,6 +678,7 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.audio.mic_break=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_color_management=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_wide_color_display=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_HDR_display=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.supports_background_blur=1
 
 # Audio low latency feature
 PRODUCT_COPY_FILES += \
@@ -787,3 +788,10 @@ PRODUCT_PACKAGES += \
 
 # Update soong config namespace
 -include vendor/google/build/soong/soong_config_namespace/qcril_oemhook.mk
+
+# ECO Service
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib/libcodec2_hidl@1.0.so \
+    system/lib/libcodec2_hidl_plugin_stub.so \
+    system/lib64/libcodec2_hidl@1.0.so \
+    system/lib64/libcodec2_hidl_plugin_stub.so
