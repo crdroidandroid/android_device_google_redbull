@@ -5,5 +5,11 @@
     "branch": "16.0",
     "remote": "github",
     "submodules": "true"
+  },
+  {
+    "repository": "crdroidandroid/vendor_bcr",
+    "target_path": "vendor/bcr",
+    "branch": "16.0",
+    "remote": "github"
   }
 ]

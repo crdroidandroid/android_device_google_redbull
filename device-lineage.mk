@@ -44,6 +44,9 @@ PRODUCT_PACKAGES += \
 #BCR
 $(call inherit-product, vendor/bcr/bcr.mk)
 
+#BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # RCS
 PRODUCT_PACKAGES += \
     PresencePolling \
