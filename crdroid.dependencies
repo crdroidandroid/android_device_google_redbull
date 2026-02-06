@@ -4,5 +4,11 @@
     "target_path": "kernel/google/redbull",
     "branch": "16.0",
     "remote": "github"
+  },
+  {
+    "repository": "crdroidandroid/vendor_bcr",
+    "target_path": "vendor/bcr",
+    "branch": "16.0",
+    "remote": "github"
   }
 ]
