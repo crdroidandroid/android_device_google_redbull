@@ -3,7 +3,8 @@
     "repository": "crdroidandroid/android_kernel_google_redbull",
     "target_path": "kernel/google/redbull",
     "branch": "16.0",
-    "remote": "github"
+    "remote": "github",
+    "submodules": "true"
   },
   {
     "repository": "TogoFire/packages_apps_ViPER4AndroidFX",
