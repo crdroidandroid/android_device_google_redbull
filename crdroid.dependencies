@@ -6,7 +6,7 @@
     "remote": "github"
   },
   {
-    "repository": "crdroidandroid/vendor_bcr",
+    "repository": "crdroidandroid/android_vendor_bcr",
     "target_path": "vendor/bcr",
     "branch": "16.0",
     "remote": "github"
