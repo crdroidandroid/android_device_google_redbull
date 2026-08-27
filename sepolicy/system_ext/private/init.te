@@ -1,0 +1,5 @@
+# Binding an alternate modem carrier configuration index over the stock one,
+# for PixelParts' carrier configuration setting. Only init may do this:
+# private/domain.te neverallows mounton on vendor_file_type for every domain
+# except init, so it cannot be delegated to vendor_init.
+allow init vendor_file:file mounton;
