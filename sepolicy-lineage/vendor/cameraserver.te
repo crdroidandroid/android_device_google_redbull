@@ -1,0 +1,14 @@
+#
+# Copyright (C) 2024 crDroid Android Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Torch strength is written from cameraserver: libcameraservice_ext_redbull is
+# linked into it.
+allow cameraserver sysfs_flash_led:dir search;
+allow cameraserver sysfs_flash_led:file rw_file_perms;
+
+# The nodes are reached through /sys/class/leds, which keeps the sysfs_leds
+# label. Without this the writes fail EACCES before reaching a flash_led node.
+allow cameraserver sysfs_leds:dir search;
