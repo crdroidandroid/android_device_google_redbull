@@ -69,6 +69,12 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,chre,chre_daemon_load_into_sensorspd,true)
 
+# Camera
+# Torch strength control. Replaces libcameraservice's weak
+# CameraProviderExtension stubs, which is what surfaces SystemUI's flashlight
+# slider on a HAL that reports no strength range.
+$(call soong_config_set,libcameraservice,ext_lib,libcameraservice_ext_redbull)
+
 # Display
 $(call soong_config_set,qtidisplay,default,true)
 $(call soong_config_set,qtidisplay,drmpp,true)
