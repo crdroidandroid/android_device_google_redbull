@@ -753,6 +753,14 @@ on property:vendor.all.modules.ready=1
     chown system input /dev/touch_offload
     chmod 660 /dev/touch_offload
 
+    # Flash LEDs, written by libcameraservice_ext_redbull on cameraserver's
+    # behalf to set torch strength. The nodes are 0644 so a chown is enough,
+    # physical paths because init will not chown through the /sys/class
+    # symlinks, and this trigger because they come from leds-qpnp-flash-v2.ko.
+    chown cameraserver cameraserver /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/led:torch_0/brightness
+    chown cameraserver cameraserver /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/led:torch_1/brightness
+    chown cameraserver cameraserver /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/led:switch_2/brightness
+
 # Conditionally enable the twoshay touch service
 on property:persist.vendor.enable_twoshay=1
     enable twoshay
