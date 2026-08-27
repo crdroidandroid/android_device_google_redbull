@@ -64,6 +64,12 @@ include hardware/google/pixel/touch/device.mk
 PRODUCT_PACKAGES += \
     chre_daemon_msm
 
+# Camera
+# Torch strength control. Replaces libcameraservice's weak
+# CameraProviderExtension stubs, which is what surfaces SystemUI's flashlight
+# slider on a HAL that reports no strength range.
+$(call soong_config_set,libcameraservice,ext_lib,libcameraservice_ext_redbull)
+
 # Display
 $(call soong_config_set,qtidisplay,default,true)
 $(call soong_config_set,qtidisplay,drmpp,true)
