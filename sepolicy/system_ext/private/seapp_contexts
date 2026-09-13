@@ -8,7 +8,6 @@ user=_app seinfo=googlepulse name=com.google.android.apps.googlecamera.fishfood 
 user=_app seinfo=platform name=com.google.android.devicedropmonitor domain=device_drop_monitor type=app_data_file levelFrom=all
 
 # Domain for Display
-user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all
 
 # Domain for IpHealthMonitor service
 user=_app seinfo=platform name=com.google.android.iphealthmonitor domain=ip_health_monitor type=app_data_file levelFrom=all
