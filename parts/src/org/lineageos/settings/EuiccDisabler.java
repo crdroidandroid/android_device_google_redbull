@@ -27,8 +27,11 @@ class EuiccDisabler {
         "com.google.android.gms",
         "com.google.android.gsf"
     };
+    // Only EuiccSupportPixel depends on GMS: OtaApplication reads Gservices when
+    // the process starts and dies without it, which at boot takes telephony with
+    // it. EuiccGoogle hosts the EuiccService the LPA UI binds to and reaches the
+    // eUICC over RIL, not OMAPI, so it works without GMS and must stay enabled.
     private static final String[] EUICC_PACKAGES = new String[]{
-        "com.google.android.euicc",
         "com.google.euiccpixel"
     };
 
