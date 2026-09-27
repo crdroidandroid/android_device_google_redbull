@@ -21,3 +21,4 @@ user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymon
 # Verizon for OBDM tool
 user=_app seinfo=verizon name=com.verizon.obdm domain=obdm_app type=app_data_file levelFrom=all
 user=_app seinfo=verizon name=com.verizon.obdm:background domain=obdm_app type=app_data_file levelFrom=all
+user=_app isPrivApp=true seinfo=EuiccSupportPixel name=com.google.euiccpixel domain=euiccpixel_app type=app_data_file levelFrom=all
