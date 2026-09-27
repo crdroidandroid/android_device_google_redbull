@@ -2,7 +2,7 @@
   {
     "repository": "crdroidandroid/android_kernel_google_redbull",
     "target_path": "kernel/google/redbull",
-    "branch": "16.0",
+    "branch": "17.0",
     "remote": "github"
   },
   {
@@ -14,7 +14,7 @@
   {
     "repository": "306bobby-android/packages_apps_PixelParts",
     "target_path": "packages/apps/PixelParts",
-    "branch": "16.0",
+    "branch": "17.0",
     "remote": "github"
   }
 ]
