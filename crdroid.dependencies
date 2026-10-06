@@ -12,9 +12,9 @@
     "remote": "github"
   },
   {
-    "repository": "306bobby-android/packages_apps_PixelParts",
+    "repository": "crdroidandroid/android_packages_apps_PixelParts",
     "target_path": "packages/apps/PixelParts",
-    "branch": "17.0",
+    "branch": "17.0-redbull",
     "remote": "github"
   }
 ]
